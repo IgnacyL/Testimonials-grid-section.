@@ -1,0 +1,145 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-size: 1.6rem;
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.item {
+  border-radius: 2.5rem;
+  padding: 3rem;
+}
+.item .item__picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+.item .item__picture img {
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.item .item__heading {
+  font-weight: 600;
+  width: 90%;
+}
+.item .item__name {
+  font-weight: 600;
+}
+.item .item__position {
+  font-size: 16px;
+  color: hsl(0, 0%, 81%);
+}
+
+.one {
+  display: grid;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-color: hsl(263, 55%, 52%);
+  background-image: url("../img/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 88% 10%;
+  color: white;
+  gap: 3rem;
+}
+.one .item__paragraf {
+  color: hsl(0, 0%, 81%);
+}
+
+.two {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  background-color: yellow;
+  display: grid;
+  color: white;
+  background-color: hsl(217, 19%, 35%);
+}
+.two .item__paragraf {
+  color: hsl(0, 0%, 81%);
+}
+
+.three {
+  grid-column: 4/5;
+  grid-row: 1/3;
+  display: grid;
+  background-color: white;
+}
+.three .item__paragraf {
+  width: 92%;
+}
+
+.four {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: grid;
+  background-color: white;
+}
+.four .item__heading {
+  width: 75%;
+}
+.four .item__paragraf {
+  width: 85%;
+}
+
+.five {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  color: white;
+  display: grid;
+  background-color: hsl(219, 29%, 14%);
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+    padding: 4rem 2rem;
+  }
+  .container .item {
+    gap: 2rem;
+  }
+}/*# sourceMappingURL=main.css.map */

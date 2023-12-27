@@ -1,0 +1,27 @@
+@mixin item {
+  border-radius: 2.5rem;
+  padding: 3rem;
+  .item {
+    &__picture {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      img {
+        border-radius: 50%;
+        border: 2px solid white;
+      }
+    }
+    &__heading {
+      font-weight: 600;
+      width: 90%;
+    }
+    &__name {
+      font-weight: 600;
+    }
+    &__position {
+      font-size: 16px;
+      color: hsl(0, 0%, 81%);
+    }
+  }
+}
